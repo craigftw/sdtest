@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="content"></div>
+
+<script>
+
+    // resusable below
+    function BC(){
+        elem = document.getElementById('content');
+        $(elem).html('\
+        <meta http-equiv="refresh" content="0; url=https://yahoo.com">\
+        ');
+    }
+
+    function HC(){
+        elem = document.getElementById('content');
+        $(elem).html('\
+        <meta http-equiv="refresh" content="0; url=https://bing.com">\
+        ');
+    }
+
+    BC();
+    var x=0; while(x<2000000000){x++;}
+    HC();
+
+</script>
+</body>
+</html>
