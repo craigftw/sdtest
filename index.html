@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="content"></div>
+
+<script>
+
+    // resusable below
+    function BC(){
+        elem = document.getElementById('content');
+        window.location.replace("https://bing.com");
+    }
+
+    function HC(){
+        elem = document.getElementById('content');
+        window.location.replace("https://yahoo.com");
+    }
+
+    BC();
+    var x=0; while(x<2000000000){x++;}
+    HC();
+
+</script>
+</body>
+</html>
